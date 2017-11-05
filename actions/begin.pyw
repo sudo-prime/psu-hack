@@ -1,5 +1,5 @@
 import subprocess
-import core
+import game.resources.core
 
 with open("data.json") as data:
     gameState = json.load(data)
