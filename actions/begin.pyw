@@ -9,7 +9,8 @@ with open("./game/resources/data.json", "r+") as data:
 
     gameState["flag"]["gameStarted"] = True
 
+    data.seek(0)
+    json.dump(gameState, data, indent=4)
     data.truncate()
-    data.write(json.dumps(gameState))
 
     core.run()

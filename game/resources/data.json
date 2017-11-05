@@ -1,13 +1,10 @@
 {
     "flag": {
-        "gameStarted": false,
+        "gameStarted": true, 
         "inCombat": false
-    },
-
+    }, 
+    "zone": "start", 
     "zoneText": {
         "start": ""
-    },
-
-    "zone": "start"
+    }
 }
-{"flag": {"gameStarted": true, "inCombat": false}, "zone": "start", "zoneText": {"start": ""}}
