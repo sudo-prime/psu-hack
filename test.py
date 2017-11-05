@@ -1,14 +1,3 @@
-"""import subprocess
-import sys
-import platform
-
-
-if platform.system() == "Windows":
-    subprocess.Popen(r'explorer /select,".\actions\attack"')
-
-elif sys.platform == "darwin"
-    #do some shit
-"""
 import os
 import platform
 import subprocess
