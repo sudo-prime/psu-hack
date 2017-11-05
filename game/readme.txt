@@ -1,1 +1,2 @@
-thanks for reading
+if youre reading this,
+please dont cheat!
