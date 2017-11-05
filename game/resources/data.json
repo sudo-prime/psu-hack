@@ -1,9 +1,15 @@
 {
+    "character": {
+        "name": "",
+        "level": 1,
+        "inventory": []
+    },
     "flag": {
-        "gameStarted": true, 
-        "inCombat": false
-    }, 
-    "zone": "start", 
+        "gameStarted": true,
+        "inCombat": false,
+        "nameConfirm": false
+    },
+    "currentZone": "start",
     "zoneText": {
         "start": ""
     }

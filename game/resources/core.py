@@ -3,7 +3,6 @@ import os
 import platform
 import subprocess
 
-
 def open_file(path):
     if platform.system() == "Windows":
         path = path.replace("/", "\\")
@@ -20,7 +19,5 @@ def run():
 
         with open("./game.txt", "r+") as game:
             game.truncate()
-            game.write(str(gameState["flag"]["gameStarted"]))
+            game.write(str(gameState[""]["gameStarted"]))
             game.close()
-
-#open_file("./game.txt") WORKS MAC
