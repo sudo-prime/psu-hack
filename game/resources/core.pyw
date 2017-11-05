@@ -14,8 +14,18 @@ def open_file(path):
     else:
         subprocess.Popen(["xdg-open", path])
 
+def formatPath(path):
+    if platform.system() == "Windows":
+        path = path.replace("/", "\\")
+        return path
+    elif platform.system() == "Darwin":
+        path = path.replace("\\", "/")
+        return path
+    else:
+        return "INVALID_PATH"
+
 def run():
-    with open("./game/resources/data.json") as data:
+    with open(formatPath("./game/resources/data.json")) as data:
         gameState = json.load(data)
 
         # Name entry
