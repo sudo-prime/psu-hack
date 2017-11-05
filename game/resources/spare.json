@@ -1,0 +1,12 @@
+{
+    "flag": {
+        "gameStarted": false,
+        "inCombat": false
+    },
+
+    "zoneText": {
+        "start": ""
+    },
+
+    "zone": "start"
+}
