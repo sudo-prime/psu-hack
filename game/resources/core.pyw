@@ -4,6 +4,19 @@ import platform
 import subprocess
 from shutil import copyfile
 
+if platform.system() == "Windows":
+    namePath = ".\\..\\..\\name.txt"
+    gamePath = ".\\..\\..\\game.txt"
+    fromDonePath = "done.pyw"
+    toDonePath= ".\\..\\..\\done.pyw"
+    dataPath = "data.json"
+else:
+    namePath = "./name.txt"
+    gamePath = "./game.txt"
+    fromDonePath = "./game/resources/done.pyw"
+    toDonePath= "done.pyw"
+    dataPath = "./game/resources/data.json"
+
 def open_file(path):
     if platform.system() == "Windows":
         path = path.replace("/", "\\")
@@ -34,8 +47,6 @@ def run():
             path = "./name.txt"
             writeFile = open(path, "w")
             writeFile.close()
-
-            nameFile = open(path, "r")
 
             copyfile("./game/resources/done.pyw", "done.pyw")
 
