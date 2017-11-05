@@ -10,3 +10,4 @@
 
     "zone": "start"
 }
+{"flag": {"gameStarted": true, "inCombat": false}, "zone": "start", "zoneText": {"start": ""}}
