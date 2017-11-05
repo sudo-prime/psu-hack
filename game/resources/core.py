@@ -11,6 +11,7 @@ def open_file(path):
     else:
         subprocess.Popen(["xdg-open", path])
 
-with open("data.json") as data:
-    gameState = json.load(data)
-    print gameState["name"]
+def run():
+    with open("data.json") as data:
+        gameState = json.load(data)
+        print gameState["name"]
