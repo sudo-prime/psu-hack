@@ -2,15 +2,56 @@
     "character": {
         "name": "",
         "level": 1,
-        "inventory": []
+        "stats": {
+            "health": 15,
+            "armor": 0,
+            "gold": 100
+        },
+        "actions": {
+            "attacks": {
+                "weapons": [],
+                "spells": []
+            },
+            "inventory": [],
+            "run": false
+        },
+        "loactions": [],
+        "sell": []
     },
     "flag": {
         "gameStarted": false,
         "inCombat": false,
-        "nameConfirm" : true
+        "confirmName": true,
+        "newZone": false,
+        "visitedZones": [],
+        "specialZones": []
     },
-    "zone": "start",
+    "id": {
+        "weapons": [],
+        "items": []
+    },
+    "currentZone": "",
     "zoneText": {
-        "start": ""
-    }
+        "start": {
+            "new": "You're in the start zone.",
+            "visited": "You're in the start zone again. You've been here before.",
+            "special": ""
+        },
+        "zone_2": {
+            "new": "You're in zone 2.",
+            "visited": "You're in zone 2 again. You've been here before.",
+            "special": ""
+        },
+        "zone_3": {
+            "new": "You're in zone 3.",
+            "visited": "You're in zone 3 again. You've been here before.",
+            "special": ""
+        }
+    },
+    "nearby": {
+        "start": ["zone_2"],
+        "zone 2": ["start", "zone_3"],
+        "zone 3": ["zone_2"]
+    },
+    "gameText": ""
 }

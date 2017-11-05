@@ -1,16 +1,65 @@
 {
+    "currentZone": "start", 
     "character": {
-        "name": "",
-        "level": 1,
-        "inventory": []
-    },
+        "sell": [], 
+        "stats": {
+            "armor": 0, 
+            "health": 15, 
+            "gold": 100
+        }, 
+        "name": "n", 
+        "level": 1, 
+        "loactions": [], 
+        "actions": {
+            "attacks": {
+                "weapons": [], 
+                "spells": []
+            }, 
+            "run": false, 
+            "inventory": []
+        }
+    }, 
+    "nearby": {
+        "start": [
+            "zone_2"
+        ], 
+        "zone 2": [
+            "start", 
+            "zone_3"
+        ], 
+        "zone 3": [
+            "zone_2"
+        ]
+    }, 
     "flag": {
-        "gameStarted": false,
-        "inCombat": false,
-        "nameConfirm" : true
-    },
-    "zone": "start",
+        "newZone": true, 
+        "confirmName": true, 
+        "gameStarted": false, 
+        "inCombat": false, 
+        "visitedZones": [], 
+        "nameConfirm": false, 
+        "specialZones": []
+    }, 
+    "gameText": "", 
+    "id": {
+        "weapons": [], 
+        "items": []
+    }, 
     "zoneText": {
-        "start": ""
+        "start": {
+            "new": "You're in the start zone.", 
+            "special": "", 
+            "visited": "You're in the start zone again. You've been here before."
+        }, 
+        "zone_3": {
+            "new": "You're in zone 3.", 
+            "special": "", 
+            "visited": "You're in zone 3 again. You've been here before."
+        }, 
+        "zone_2": {
+            "new": "You're in zone 2.", 
+            "special": "", 
+            "visited": "You're in zone 2 again. You've been here before."
+        }
     }
 }
