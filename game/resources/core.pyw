@@ -38,20 +38,20 @@ def formatPath(path):
         return "INVALID_PATH"
 
 def run():
-    with open(formatPath("./game/resources/data.json")) as data:
+    with open(formatPath(dataPath)) as data:
         gameState = json.load(data)
 
         # Name entry
 
         if gameState["flag"]["nameConfirm"] == True:
-            path = "./name.txt"
+            path = namePath
             writeFile = open(path, "w")
             writeFile.close()
 
-            copyfile("./game/resources/done.pyw", "done.pyw")
+            copyfile(fromDonePath, toDonePath)
 
         # Write result to game.txt
-        with open("./game.txt", "r+") as game:
+        with open(gamePath, "r+") as game:
             game.truncate()
             game.write("")
             game.close()
