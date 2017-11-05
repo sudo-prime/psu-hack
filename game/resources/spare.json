@@ -1,12 +1,13 @@
 {
+    "character": {
+      "name": ""
+    },
     "flag": {
-        "gameStarted": false,
+        "gameStarted": true,
         "inCombat": false
     },
-
+    "zone": "start",
     "zoneText": {
         "start": ""
-    },
-
-    "zone": "start"
+    }
 }
