@@ -7,9 +7,12 @@
     "flag": {
         "gameStarted": true,
         "inCombat": false,
-        "nameConfirm": false
+        "nameConfirm" : false
     },
-    "currentZone": "start",
+    "character": {
+        "name": ""
+    },
+    "zone": "start",
     "zoneText": {
         "start": ""
     }
