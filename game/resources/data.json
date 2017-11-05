@@ -5,12 +5,9 @@
         "inventory": []
     },
     "flag": {
-        "gameStarted": true,
+        "gameStarted": false,
         "inCombat": false,
-        "nameConfirm" : false
-    },
-    "character": {
-        "name": ""
+        "nameConfirm" : true
     },
     "zone": "start",
     "zoneText": {

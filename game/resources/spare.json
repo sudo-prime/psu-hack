@@ -1,14 +1,13 @@
 {
-<<<<<<< HEAD
-    "characterName": "",
-=======
     "character": {
-      "name": ""
+        "name": "",
+        "level": 1,
+        "inventory": []
     },
->>>>>>> c0f458c75b7978ec81e8dc74fdaf26f401078331
     "flag": {
-        "gameStarted": true,
-        "inCombat": false
+        "gameStarted": false,
+        "inCombat": false,
+        "nameConfirm" : true
     },
     "zone": "start",
     "zoneText": {
